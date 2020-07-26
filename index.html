@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="kr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/880b5e0e33.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
     <title>Home | Practice</title>
 </head>
+
 <body>
-    <a href="calculator/calculator.html">계산기</a>
+    <header class="header-container">
+        <div class="header-container__weather-container weather">
+            <i class="fas fa-cloud-showers-heavy weather__icon"></i>
+            <section class="weather__text-box">
+                <span class="weather__text">rainy</span>
+                <span class="weather__temp">26 ℃</span>
+            </section>
+        </div>
+        <div class="header-container__clock-container">
+            <span class="js-clock header-container__clock-text clock-text">00:00</span>
+        </div>
+    </header>
+    <main>
+        <section class="application-grid">
+            <a href="calculator/calculator.html">
+                <i class="fas fa-calculator"></i>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <span>created by bluepaun</span>
+    </footer>
 </body>
+
 </html>

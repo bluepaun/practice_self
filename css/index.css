@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import "reset.css";
+@import "header.css";
+
+
+body{
+    background-color: #3498db;
+    color: #ecf0f1;
+    font-family: 'Source Sans Pro', sans-serif;
+}
