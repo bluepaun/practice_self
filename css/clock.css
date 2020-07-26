@@ -1,0 +1,32 @@
+.header-container .header-container__clock-container{
+    padding: 10px 10px;
+    border: 2px solid #2980b9;
+    border-radius: 20px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-container__clock-container .clock-text{
+    font-size: 30px;
+    font-family: 'Ranchers', cursive;
+}
+
+@keyframes floatingAnim{
+    0%{
+        box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 26px -8px rgba(0,0,0,.25);
+    }
+    50%{
+        box-shadow: 0 30px 60px -60px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 26px -8px rgba(0,0,0,.25);
+    }
+    100%{
+        box-shadow: 0 30px 60px -12px rgba(50,50,93,.25), 0 18px 36px -18px rgba(0,0,0,.3), 0 -12px 26px -8px rgba(0,0,0,.25);
+    }
+}
+
+
+.header-container .header-container__clock-container{
+    animation: floatingAnim 2s linear  infinite;
+}
