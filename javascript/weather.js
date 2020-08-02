@@ -10,7 +10,7 @@ const setWeather = (weather, icon, temp, place) => {
     placeSpan.innerText = place;
     weatherText.innerText = weather;
     weatherTemp.innerText = `${temp} ℃`;
-    weatherIcon.src = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+    weatherIcon.src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
     weatherIcon.style.display = "block";
 };
 
