@@ -16,7 +16,7 @@ const setWeather = (weather, icon, temp, place) => {
 
 const getWeather = (lat, long) => {
     fetch(
-        `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${API_KEY}&units=metric`
     )
         .then((request) => {
             return request.json();
