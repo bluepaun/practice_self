@@ -1,10 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Source+Sans+Pro&display=swap');
 @import "reset.css";
-@import "header.css";
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&family=Source+Sans+Pro&display=swap");
 
-
-body{
-    background-color: #3498db;
-    color: #ecf0f1;
-    font-family: 'Source Sans Pro', sans-serif;
+body {
+    font-family: "Source Sans Pro", sans-serif;
 }
