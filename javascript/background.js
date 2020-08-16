@@ -1,7 +1,7 @@
 const image = document.querySelector(".bgImage");
 const cover = document.querySelector(".bgImage--cover");
 
-const IMG_NUMBER = 3;
+const IMG_NUMBER = 6;
 const BG_OFF = "1";
 const BG_ON = "0.2";
 const WEATHER_LIST = [
@@ -20,10 +20,12 @@ const reloadBackground = () => {
 
 const setImage = () => {
     const randomNum = Math.floor(Math.random() * IMG_NUMBER);
-    if (WEATHER_LIST.includes(weatherText)) {
+    if (WEATHER_LIST.includes(weatherText) && randomNum < 3) {
         image.src = `resource/${weatherText}/${randomNum}.jpg`;
     } else {
-        image.src = `resource/default/${randomNum}.jpg`;
+        image.src = `resource/default/${
+            randomNum < 3 ? randomNum : randomNum - 3
+        }.jpg`;
     }
 };
 
