@@ -10,6 +10,73 @@
         <link rel="stylesheet" href="css/index.css" />
         <title>Home | Practice</title>
     </head>
-
-    <body> </body>
+    <body>
+        <img class="bgImage" src="" />
+        <div class="bgImage--cover"></div>
+        <header> <div class="weather"></div></header>
+        <main>
+            <section class="container-time">
+                <div class="container-date">
+                    <span class="date__year">0</span>
+                    <p>-</p>
+                    <span class="date__month">0</span>
+                    <p>-</p>
+                    <span class="date__day">0</span>
+                </div>
+                <div class="container-clock">
+                    <span class="clock__hour">0</span>
+                    <p>:</p>
+                    <span class="clock__minute">0</span>
+                    <p>:</p>
+                    <span class="clock__second">0</span>
+                </div>
+            </section>
+            <section class="container-greeting">
+                <form class="greeting__input-name hide-view">
+                    <input
+                        type="text"
+                        name="greeting-name"
+                        placeholder="Type your name"
+                    />
+                </form>
+                <div class="greeting__text hide-view">
+                    <span class="greeting__hello">Have a nice day!</span>
+                    <span class="greeting__name">bluepaun</span>
+                </div>
+            </section>
+            <section class="container-todo">
+                <form class="js-toDoInput">
+                    <input
+                        type="text"
+                        name="toDoText"
+                        placeholder="Input your to do"
+                    />
+                </form>
+                <div class="list-label">
+                    <span>To Do List</span>
+                    <span>Finished List</span>
+                </div>
+                <div class="container-todo__list">
+                    <div class="list-container">
+                        <div class="scroll-view">
+                            <ul class="js-toDoList ul-list"> </ul>
+                        </div>
+                    </div>
+                    <div class="list-container">
+                        <div class="scroll-view">
+                            <ul class="js-finishedList ul-list"> </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copy-right"><i class="far fa-copyright"></i> Bluepaun</p>
+        </footer>
+        <script src="javascript/weather.js"></script>
+        <script src="javascript/todo.js"></script>
+        <script src="javascript/clock.js"></script>
+        <script src="javascript/background.js"></script>
+        <script src="javascript/greeting.js"></script>
+    </body>
 </html>
